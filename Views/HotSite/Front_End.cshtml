@@ -1,0 +1,40 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<div class="ui horizontal divider">JET</div>
+<form class="ui form">
+  <p>Formulario JET</p>
+  <div class="two fields">
+    <div class="field">
+      <label>Nome</label>
+      <input placeholder="Nome" name="name" type="text" id="name">
+    </div>
+    <div class="field">
+    <label>Email</label>
+      <input placeholder="Email" name="email" type="text" id="emaill">
+    </div>
+  </div>
+    <div class="two fields">
+    <div class="field">
+      <label>Telefone</label>
+      <input placeholder="Telefone" name="telefone" type="text" id="telefone">
+    </div>
+    <div class="field">
+    <label>Assunto</label>
+      <input placeholder="Assunto" name="assunto" type="text" id="assunto">
+    </div>
+  </div>
+  <div class="field">
+    <label>Mensagem</label>
+      <input placeholder="Mensagem" name="mensagem" type="text" id="mensagem">
+    </div>
+    <div onclick="setData()" class="ui primary submit button">Enviar</div>
+  <div class="ui error message"></div>
+</form>
+  
+  <div class="ui button" onclick="getData()">Recuperar e Editar</div>
+
+
+<script type="text/javascript" src="~/resources/js/functions/arquivo_start.js"></script>
