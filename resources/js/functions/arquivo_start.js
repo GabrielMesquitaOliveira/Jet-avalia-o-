@@ -8,10 +8,6 @@ $('.ui.form')
                 type   : 'empty',
                 prompt : 'insira um nome válido'
               },
-              {
-                type   : 'text',
-                prompt : 'insira um nome válido'
-              }
             ]
           },
 
@@ -32,7 +28,7 @@ $('.ui.form')
             prompt : 'insira um telefone válido'
           },
           {
-            type   : 'minLength[9]',
+            type   : 'minLength[11]',
             prompt : 'insira um telefone válido'
           },
           {
