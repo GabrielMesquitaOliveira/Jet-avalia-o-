@@ -55,14 +55,7 @@ $('.ui.form')
     }
   })
 ;
-function setData(form) { 
-    sessionStorage.setItem("form_name", document.getElementById('name').value); 
-    sessionStorage.setItem("form_email", document.getElementById('emaill').value); 
-    sessionStorage.setItem("form_telefone", document.getElementById('telefone').value); 
-    sessionStorage.setItem("form_assunto", document.getElementById('assunto').value); 
-    sessionStorage.setItem("form_mensagem", document.getElementById('mensagem').value);
 
-}
 
 function getData() {
     document.getElementById('name').value = sessionStorage.getItem("form_name");
@@ -70,4 +63,23 @@ function getData() {
     document.getElementById('telefone').value = sessionStorage.getItem("form_telefone");
     document.getElementById('assunto').value = sessionStorage.getItem("form_assunto");
     document.getElementById('mensagem').value = sessionStorage.getItem("form_mensagem");
+}
+
+function setForm(){
+
+  document.getElementById('name2').value = document.getElementById('name').value;
+  document.getElementById('emaill2').value = document.getElementById('emaill').value;
+  document.getElementById('telefone2').value = document.getElementById('telefone').value;
+  document.getElementById('assunto2').value = document.getElementById('assunto').value;
+  document.getElementById('mensagem2').value = document.getElementById('mensagem').value;
+
+}
+
+function setData(form) { 
+
+  sessionStorage.setItem("form_name", document.getElementById('name').value); 
+  sessionStorage.setItem("form_email", document.getElementById('emaill').value); 
+  sessionStorage.setItem("form_telefone", document.getElementById('telefone').value); 
+  sessionStorage.setItem("form_assunto", document.getElementById('assunto').value); 
+  sessionStorage.setItem("form_mensagem", document.getElementById('mensagem').value);
 }
